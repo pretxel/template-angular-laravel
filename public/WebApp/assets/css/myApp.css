@@ -1,0 +1,26 @@
+body {
+	font-size: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 5em;
+}
+
+/*----------------------------------------------------\
+|                      LOADER                         |
+\----------------------------------------------------*/
+#mainLoader {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2em;
+  margin-left: -0.5em;
+  z-index: 9999;
+  display: none;
+}
+
+/*----------------------------------------------------\
+|                      EXAMPLE                        |
+\----------------------------------------------------*/
+.starter-template {
+  padding: 2em 1.5em;
+  text-align: center;
+}

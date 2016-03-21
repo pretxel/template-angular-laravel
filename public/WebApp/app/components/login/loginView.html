@@ -1,0 +1,39 @@
+<div class="container">
+
+<!------------- ANGULARJS, UI BOOTSTRAP EXAMPLE CODE -------------->
+
+	<div class="starter-template">
+		<h1>Laravel with AngularJS, Bootstrap starter template</h1>
+		<p class="lead">Use this document as a way to quickly start any new project using good practices!</p>
+
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-4">
+				<h3>Login:</h3>
+
+				<form role="form" ng-submit="login.callLogin()" name="loginForm" novalidate>
+					<div class="form-group col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-xlg-2 col-xlg-offset-5 login_errorField">
+						<p class="login_txtError">Error</p>
+					</div>
+					<div class="form-group" show-errors='{showSuccess: true}'>
+					    <input type="text" class="form-control" name="userName" ng-model="login.userName" placeholder="Enter user name" required>
+					    <p class="help-block" ng-if="loginForm.userName.$error.required">The user's name is required</p>
+					</div>
+					<div class="form-group" show-errors='{showSuccess: true}'>
+					    <input type="password" class="form-control" name="password" ng-model="login.userPassword" placeholder="Enter your password" required>
+					    <p class="help-block" ng-if="loginForm.password.$error.required">The user's password is required</p>
+					</div>
+					<button type="submit" class="btn btn-danger">Login</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="row">
+			<hr>
+			<h1>Hello {{login.userName}}!</h1>
+		</div>
+
+	</div>
+
+	<!------------- ENDS ANGULARJS, UI BOOTSTRAP EXAMPLE CODE -------------->
+
+</div><!-- /.container -->

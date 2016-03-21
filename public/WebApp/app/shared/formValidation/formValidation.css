@@ -1,0 +1,11 @@
+/*----------------------------------------------------\
+|                  FORM VALIDATOR                     |
+\----------------------------------------------------*/
+.form-group .help-block {
+  display: none;
+  text-align: left;
+}
+ 
+.form-group.has-error .help-block {
+  display: block;
+}
